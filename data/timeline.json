@@ -1,0 +1,32 @@
+[
+  {
+    "period": "2016",
+    "event": "The original Endless Summer co-headlining tour establishes the public tour motif.",
+    "status": "documented",
+    "source": "official/public tour records"
+  },
+  {
+    "period": "2020-02",
+    "event": "Public footage and reporting from Super Bowl LIV weekend generate speculation involving G-Eazy and Megan Thee Stallion; Megan publicly rejects the relationship narrative.",
+    "status": "documented-and-attributed",
+    "source": "SOURCES.md"
+  },
+  {
+    "period": "2024",
+    "event": "IBLoud IVXX publishes experimental music artifacts that function as a character-development sketchbook.",
+    "status": "documented",
+    "source": "Audio.com upload metadata"
+  },
+  {
+    "period": "2026",
+    "event": "An AI-assisted version of 50 Ways to Leave Another is published and requires explicit provenance and rights documentation.",
+    "status": "documented",
+    "source": "Audio.com and Suno link metadata"
+  },
+  {
+    "period": "2026-09-15/2026-10-28",
+    "event": "Endless Summer Tour Part II creates a present-market context for the independent archive.",
+    "status": "documented",
+    "source": "official Live Nation and Ticketmaster listings"
+  }
+]
