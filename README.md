@@ -1,8 +1,12 @@
 # IBLoud IVXX Story Lab
 
+![IBLoud IVXX Story Lab — Signal, Witness, Archive](.github/social-preview.jpg)
+
 An independent narrative-and-music research repository documenting how a public online signal can become character, archive, and ethical creative practice.
 
 > **Independent project.** This repository is not affiliated with, endorsed by, or commissioned by G-Eazy, Logic, Megan Thee Stallion, Our Bad Habit, RCA Records, Live Nation, Ticketmaster, the NFL, or the Endless Summer Tour. Nothing here represents private knowledge about any person.
+
+> **Proof-of-concept notice.** Any trailer or episode prototype is an unofficial, noncommercial research demonstration using limited excerpts for criticism, commentary, source identification and analysis. A fair-use rationale is documented for each excerpt, but fair use is context-specific and remains subject to legal review.
 
 ## What this repository establishes
 
@@ -104,8 +108,10 @@ See [MARKET-USE.md](MARKET-USE.md) for the campaign model.
 - [AI-DISCLOSURE.md](AI-DISCLOSURE.md) — Suno workflow and human-authorship record
 - [SOURCES.md](SOURCES.md) — public sources and verification notes
 - [CONTRIBUTING.md](CONTRIBUTING.md) — evidence and corrections protocol
+- [FAIR-USE-PROOF-OF-CONCEPT.md](FAIR-USE-PROOF-OF-CONCEPT.md) — excerpt-selection and labeling protocol
+- [TRAILER-TREATMENT.md](TRAILER-TREATMENT.md) — 90-second proof-of-concept structure
+- [TRAILER-CLIP-LEDGER.csv](TRAILER-CLIP-LEDGER.csv) — clip-level purpose, duration and rights review
 
 ## Status
 
-**Research prototype / rights review required.** No soundtrack track is represented as cleared for commercial synchronization unless the clearance ledger says `CLEARED` and identifies the supporting agreement.
-
+**Research prototype / fair-use rationale documented / legal review required.** No trailer excerpt is represented as licensed merely because it is labeled as fair use. No soundtrack track is represented as cleared for commercial synchronization unless the clearance ledger says `CLEARED` and identifies the supporting agreement.

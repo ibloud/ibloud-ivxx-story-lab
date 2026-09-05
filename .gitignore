@@ -1,0 +1,10 @@
+.DS_Store
+*.wav
+*.mp3
+*.aiff
+*.flac
+*.m4a
+contracts/
+private-evidence/
+.env
+

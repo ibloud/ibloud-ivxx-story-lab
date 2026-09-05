@@ -1,0 +1,11 @@
+# Correction
+
+- Date submitted:
+- Contributor:
+- Affected file or claim:
+- Existing wording:
+- Proposed correction:
+- Supporting source:
+- Truth-status label:
+- Rights/privacy considerations:
+
