@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IBLoud IVXX Story Lab</title>
+  <meta name="description" content="An independent narrative-and-music research archive about platform memory, character, rights, and the present market.">
+  <style>
+    :root { color-scheme: dark; --ink:#f6f2e9; --muted:#aaa7a0; --violet:#9d7cff; --acid:#d6ff4b; --line:#35323f; --panel:#17151d; --bg:#0c0b10; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.65 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    a { color:var(--acid); text-underline-offset:4px; }
+    header, main, footer { width:min(1100px,calc(100% - 36px)); margin:auto; }
+    header { padding:44px 0 22px; border-bottom:1px solid var(--line); }
+    .eyebrow { color:var(--violet); letter-spacing:.12em; text-transform:uppercase; font-size:.82rem; }
+    h1 { margin:.2em 0; font:clamp(2.6rem,8vw,6.8rem)/.92 Georgia,serif; letter-spacing:-.055em; max-width:900px; }
+    h2 { font:clamp(1.65rem,4vw,2.6rem)/1.1 Georgia,serif; margin:0 0 .6em; }
+    .lede { max-width:780px; color:#d8d3ca; font-size:1.06rem; }
+    .notice { margin:24px 0 0; padding:16px 18px; border:1px solid var(--violet); background:#15101f; font-size:.9rem; }
+    nav { display:flex; flex-wrap:wrap; gap:10px 20px; padding:18px 0; }
+    nav a { color:var(--muted); text-decoration:none; }
+    section { padding:58px 0; border-bottom:1px solid var(--line); }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .card { padding:22px; border:1px solid var(--line); background:var(--panel); }
+    .card strong { display:block; color:var(--violet); margin-bottom:7px; }
+    .spine { counter-reset:act; display:grid; gap:12px; }
+    .beat { counter-increment:act; display:grid; grid-template-columns:48px 1fr; gap:14px; padding:16px 0; border-top:1px solid var(--line); }
+    .beat::before { content:counter(act,decimal-leading-zero); color:var(--acid); font-weight:700; }
+    .label { display:inline-block; border:1px solid var(--line); padding:3px 8px; margin:4px 4px 4px 0; font-size:.78rem; color:var(--muted); }
+    .cta { display:inline-block; margin-top:12px; padding:11px 15px; border:1px solid var(--acid); text-decoration:none; }
+    footer { padding:30px 0 60px; color:var(--muted); font-size:.85rem; }
+    @media (max-width:700px) { .grid { grid-template-columns:1fr; } header { padding-top:28px; } section { padding:42px 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Loptr Lab / research prototype / 2026</div>
+    <h1>IBLoud IVXX remembers what the feed forgets.</h1>
+    <p class="lede">A distributed story becomes an auditable practice: public signal, platform amplification, musical witness, rights review, and a present-market return.</p>
+    <div class="notice"><strong>Independent project.</strong> Not affiliated with or endorsed by G-Eazy, Logic, Megan Thee Stallion, Our Bad Habit, RCA Records, Live Nation, Ticketmaster, the NFL, or the Endless Summer Tour.</div>
+    <nav aria-label="Primary">
+      <a href="#pattern">Pattern</a><a href="#story">Story</a><a href="#sound">Sound</a><a href="#market">Market</a><a href="RIGHTS.md">Rights</a><a href="SOURCES.md">Sources</a>
+    </nav>
+  </header>
+  <main>
+    <section id="pattern">
+      <h2>An established storytelling pattern</h2>
+      <div class="grid">
+        <div class="card"><strong>Distributed world</strong>Tumblr, Audio.com, Bluesky and GitHub operate as connected rooms rather than a single linear publication.</div>
+        <div class="card"><strong>Persistent witness</strong>IBLoud IVXX retains fragments, but does not convert association into unsupported fact.</div>
+        <div class="card"><strong>Musical navigation</strong>Tracks locate shifts in agency, obsession, danger, pain and exit.</div>
+        <div class="card"><strong>Ethical resolution</strong>The archive documents public meaning-making while refusing claims about private reality.</div>
+      </div>
+    </section>
+    <section id="story">
+      <h2>The narrative spine</h2>
+      <div class="spine">
+        <div class="beat"><div><b>Signal</b><br>A fragment appears during Super Bowl LIV weekend.</div></div>
+        <div class="beat"><div><b>Amplification</b><br>Platforms and spectators assign a complete story to limited evidence.</div></div>
+        <div class="beat"><div><b>Contradiction</b><br>Public denial breaks the apparent certainty.</div></div>
+        <div class="beat"><div><b>Witness</b><br>IBLoud records the effect of the spectacle on her own creative practice.</div></div>
+        <div class="beat"><div><b>Laboratory</b><br>Loptr Lab separates evidence, attribution, interpretation and fiction.</div></div>
+        <div class="beat"><div><b>Return</b><br>The 2026 tour becomes a market test, not proof of affiliation.</div></div>
+      </div>
+    </section>
+    <section id="sound">
+      <h2>A soundtrack under construction</h2>
+      <p>The Audio.com catalogue fits the character's noir and fractured identity, but several mashups use identified commercial recordings. They remain research references until replaced or fully cleared.</p>
+      <span class="label">dark cinematic</span><span class="label">trip-hop</span><span class="label">fractured pop</span><span class="label">human-authored lyrics</span><span class="label">AI disclosed</span>
+      <p><a class="cta" href="https://audio.com/ibloud-ivxx">Open the development sketchbook</a></p>
+    </section>
+    <section id="market">
+      <h2>Useful in the present market</h2>
+      <div class="grid">
+        <div class="card"><strong>For creative partners</strong>A character brief, cue map, human-authorship record and replace-or-clear workflow.</div>
+        <div class="card"><strong>For live-event discovery</strong>A Minneapolis-area cultural pathway to the official September 18 Shakopee listing—without false endorsement.</div>
+        <div class="card"><strong>For research</strong>A source-labelled case study in platform memory, celebrity narratives and creator attribution.</div>
+        <div class="card"><strong>For rights review</strong>An asset ledger distinguishing composition, master, performance, likeness and AI-platform rights.</div>
+      </div>
+      <p><a class="cta" href="https://www.livenation.com/artist/K8vZ917uAkf/g-eazy-events">Official tour listings</a></p>
+    </section>
+  </main>
+  <footer>Practice → Evidence → Reflection → Analysis → Contribution<br>Research prototype. Corrections and substantiated provenance are welcome.</footer>
+</body>
+</html>
