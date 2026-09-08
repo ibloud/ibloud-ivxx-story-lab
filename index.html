@@ -3,34 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IBLoud IVXX Story Lab</title>
+  <title>IBLoud IVXX Story Lab — Everything's Strange Here</title>
   <meta name="description" content="An independent narrative-and-music research archive about platform memory, character, rights, and the present market.">
   <style>
-    :root { color-scheme: dark; --ink:#f6f2e9; --muted:#aaa7a0; --violet:#9d7cff; --acid:#d6ff4b; --line:#35323f; --panel:#17151d; --bg:#0c0b10; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.65 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
-    a { color:var(--acid); text-underline-offset:4px; }
-    header, main, footer { width:min(1100px,calc(100% - 36px)); margin:auto; }
-    header { padding:44px 0 22px; border-bottom:1px solid var(--line); }
-    .eyebrow { color:var(--violet); letter-spacing:.12em; text-transform:uppercase; font-size:.82rem; }
-    h1 { margin:.2em 0; font:clamp(2.6rem,8vw,6.8rem)/.92 Georgia,serif; letter-spacing:-.055em; max-width:900px; }
-    h2 { font:clamp(1.65rem,4vw,2.6rem)/1.1 Georgia,serif; margin:0 0 .6em; }
-    .lede { max-width:780px; color:#d8d3ca; font-size:1.06rem; }
-    .notice { margin:24px 0 0; padding:16px 18px; border:1px solid var(--violet); background:#15101f; font-size:.9rem; }
-    nav { display:flex; flex-wrap:wrap; gap:10px 20px; padding:18px 0; }
-    nav a { color:var(--muted); text-decoration:none; }
-    section { padding:58px 0; border-bottom:1px solid var(--line); }
-    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
-    .card { padding:22px; border:1px solid var(--line); background:var(--panel); }
-    .card strong { display:block; color:var(--violet); margin-bottom:7px; }
-    .spine { counter-reset:act; display:grid; gap:12px; }
-    .beat { counter-increment:act; display:grid; grid-template-columns:48px 1fr; gap:14px; padding:16px 0; border-top:1px solid var(--line); }
-    .beat::before { content:counter(act,decimal-leading-zero); color:var(--acid); font-weight:700; }
-    .label { display:inline-block; border:1px solid var(--line); padding:3px 8px; margin:4px 4px 4px 0; font-size:.78rem; color:var(--muted); }
-    .cta { display:inline-block; margin-top:12px; padding:11px 15px; border:1px solid var(--acid); text-decoration:none; }
-    footer { padding:30px 0 60px; color:var(--muted); font-size:.85rem; }
-    @media (max-width:700px) { .grid { grid-template-columns:1fr; } header { padding-top:28px; } section { padding:42px 0; } }
+    :root {
+      color-scheme: dark;
+      /* "Everything's Strange Here" (2020) Atmospheric Palette */
+      --bg: #0d1317;         /* Deep cyan-charcoal base */
+      --panel: #141c22;      /* Muted dark slate panel */
+      --line: #222e37;       /* Soft structural borders */
+      --ink: #e2e8e8;        /* Off-white primary text */
+      --muted: #7b8e96;      /* Muted teal-grey text */
+      --acid: #53c0ad;       /* Seafoam / muted cyan accent */
+      --violet: #8899ac;     /* Cool steel / slate blue accent */
+      --notice-bg: #111a21;  /* Soft notice container background */
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    a { color: var(--acid); text-underline-offset: 4px; }
+    header, main, footer { width: min(1100px, calc(100% - 36px)); margin: auto; }
+    header { padding: 44px 0 22px; border-bottom: 1px solid var(--line); }
+    .eyebrow { color: var(--violet); letter-spacing: .12em; text-transform: uppercase; font-size: .82rem; }
+    h1 { margin: .2em 0; font: clamp(2.6rem, 8vw, 6.8rem)/.92 Georgia, serif; letter-spacing: -.055em; max-width: 900px; }
+    h2 { font: clamp(1.65rem, 4vw, 2.6rem)/1.1 Georgia, serif; margin: 0 0 .6em; }
+    h3 { font: 1.3rem/1.2 Georgia, serif; margin: 2em 0 0.5em; color: var(--ink); display: flex; align-items: center; gap: 12px; }
+    .lede { max-width: 780px; color: #cbd5d6; font-size: 1.06rem; }
+    .notice { margin: 24px 0 0; padding: 16px 18px; border: 1px solid var(--violet); background: var(--notice-bg); font-size: .9rem; line-height: 1.5; }
+    nav { display: flex; flex-wrap: wrap; gap: 10px 20px; padding: 18px 0; }
+    nav a { color: var(--muted); text-decoration: none; }
+    nav a:hover { color: var(--acid); }
+    section { padding: 58px 0; border-bottom: 1px solid var(--line); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card { padding: 22px; border: 1px solid var(--line); background: var(--panel); }
+    .card strong { display: block; color: var(--violet); margin-bottom: 7px; }
+    .spine { counter-reset: act; display: grid; gap: 12px; }
+    .beat { counter-increment: act; display: grid; grid-template-columns: 48px 1fr; gap: 14px; padding: 16px 0; border-top: 1px solid var(--line); }
+    .beat::before { content: counter(act, decimal-leading-zero); color: var(--acid); font-weight: 700; }
+    .label { display: inline-block; border: 1px solid var(--line); padding: 3px 8px; margin: 4px 4px 4px 0; font-size: .78rem; color: var(--muted); }
+    .cta { display: inline-block; margin-top: 12px; padding: 11px 15px; border: 1px solid var(--acid); text-decoration: none; color: var(--acid); }
+    footer { padding: 30px 0 60px; color: var(--muted); font-size: .85rem; }
+      
+    /* === Oracle Styles === */
+    .oracle-section { position: relative; overflow: hidden; }
+    .vhs-overlay { pointer-events: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(13, 19, 23, 0) 50%, rgba(0, 0, 0, 0.2) 50%), linear-gradient(90deg, rgba(136, 153, 172, 0.03), rgba(83, 192, 173, 0.02), rgba(0, 0, 0, 0.03)); background-size: 100% 3px, 4px 100%; z-index: 0; opacity: 0.6; }
+    .oracle-content { position: relative; z-index: 2; }
+    .suit-divider { margin: 60px 0 20px; padding-bottom: 10px; border-bottom: 1px dashed var(--line); }
+    .suit-desc { color: var(--muted); font-size: 0.9rem; font-style: italic; margin: 0 0 24px; }
+    .oracle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+    .oracle-card { background: var(--panel); border: 1px solid var(--line); padding: 20px; position: relative; transition: border-color 0.3s ease; }
+    .oracle-card:hover { border-color: var(--acid); }
+    .oracle-card .num { color: var(--acid); font-size: 0.85rem; letter-spacing: 0.1em; }
+    .oracle-card .title { font: 1.4rem/1.2 Georgia, serif; color: var(--ink); margin: 6px 0; }
+    .oracle-card .track { color: var(--violet); font-size: 0.85rem; font-style: italic; margin-bottom: 12px; }
+    .oracle-card .keywords { color: var(--muted); font-size: 0.8rem; line-height: 1.5; }
+    .oracle-video { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 30px 0; border: 1px solid var(--line); box-shadow: 0 0 30px rgba(83, 192, 173, 0.08); }
+    .oracle-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .spread-layout { background: var(--bg); border: 1px solid var(--line); padding: 40px 20px; text-align: center; margin-top: 60px; }
+    .spread-grid { display: flex; flex-direction: column; align-items: center; gap: 16px; max-width: 600px; margin: 0 auto; }
+    .spread-row { display: flex; gap: 16px; justify-content: center; width: 100%; }
+    .spread-card { background: var(--panel); border: 1px solid var(--line); padding: 16px; flex: 1; min-width: 120px; font-size: 0.9rem; color: var(--muted); display: flex; flex-direction: column; gap: 6px; }
+    .spread-card span { display: block; color: var(--violet); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.15em; }
+    .spread-card.bold { border-color: var(--acid); color: var(--ink); }
+
+    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } header { padding-top: 28px; } section { padding: 42px 0; } .spread-row { flex-direction: column; } }
   </style>
 </head>
 <body>
@@ -38,9 +74,20 @@
     <div class="eyebrow">Loptr Lab / research prototype / 2026</div>
     <h1>IBLoud IVXX remembers what the feed forgets.</h1>
     <p class="lede">A distributed story becomes an auditable practice: public signal, platform amplification, musical witness, rights review, and a present-market return.</p>
-    <div class="notice"><strong>Independent project.</strong> Not affiliated with or endorsed by G-Eazy, Logic, Megan Thee Stallion, Our Bad Habit, RCA Records, Live Nation, Ticketmaster, the NFL, or the Endless Summer Tour.<br><br><strong>Unofficial noncommercial research proof of concept.</strong> Limited excerpts may be proposed only for criticism, commentary and analysis. Rights and fair-use review are required before public or commercial release.</div>
+    <div class="notice">
+      <strong>Independent project.</strong> Not affiliated with or endorsed by G-Eazy, Logic, Megan Thee Stallion, Our Bad Habit, RCA Records, Live Nation, Ticketmaster, the NFL, or the Endless Summer Tour.<br><br>
+      <strong>Unofficial noncommercial research proof of concept.</strong> Limited excerpts may be proposed only for criticism, commentary, and transformative analysis under 17 U.S.C. § 107. Rights and fair-use review are recorded in <code>CLEARANCE-LEDGER.md</code> and <code>FAIR-USE-PROOF-OF-CONCEPT.md</code> prior to public or commercial distribution.
+    </div>
     <nav aria-label="Primary">
-      <a href="#pattern">Pattern</a><a href="#story">Story</a><a href="#sound">Sound</a><a href="#market">Market</a><a href="RIGHTS.md">Rights</a><a href="SOURCES.md">Sources</a>
+      <a href="#pattern">Pattern</a>
+      <a href="#story">Story</a>
+      <a href="#sound">Sound</a>
+      <a href="#oracle">Deck 1</a>
+      <a href="#deck2">Deck 2</a>
+      <a href="#market">Market</a>
+      <a href="THE_LITTLE_BLACK_BOOK.html">Little Black Book</a>
+      <a href="RIGHTS.md">Rights</a>
+      <a href="SOURCES.md">Sources</a>
     </nav>
   </header>
   <main>
@@ -53,6 +100,7 @@
         <div class="card"><strong>Ethical resolution</strong>The archive documents public meaning-making while refusing claims about private reality.</div>
       </div>
     </section>
+
     <section id="story">
       <h2>The narrative spine</h2>
       <div class="spine">
@@ -64,12 +112,212 @@
         <div class="beat"><div><b>Return</b><br>The 2026 tour becomes a market test, not proof of affiliation.</div></div>
       </div>
     </section>
+
     <section id="sound">
       <h2>A soundtrack under construction</h2>
       <p>The Audio.com catalogue fits the character's noir and fractured identity, but several mashups use identified commercial recordings. They remain research references until replaced or fully cleared.</p>
       <span class="label">dark cinematic</span><span class="label">trip-hop</span><span class="label">fractured pop</span><span class="label">human-authored lyrics</span><span class="label">AI disclosed</span>
       <p><a class="cta" href="https://audio.com/ibloud-ivxx">Open the development sketchbook</a></p>
     </section>
+
+    <!-- SECTION: DECK 1 - THE SOLO DECK -->
+    <section id="oracle" class="oracle-section">
+      <div class="vhs-overlay"></div>
+      <div class="oracle-content">
+        <div class="eyebrow">DECK 1: THE SOLO DECK // 52 CARDS</div>
+        <h2>The G-Eazy Solo Oracle</h2>
+        <p class="lede">Four suits, four eras. A complete 52-card map of the solo narrative, from the Bay Area come-up to quarantine introspection. Zero padding.</p>
+          
+        <div class="oracle-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9xLIR2Udijc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="suit-divider">
+          <h3 style="margin:0;">♣ Clubs — Must Be Nice (2012)</h3>
+        </div>
+        <p class="suit-desc">The Come-Up · Hunger · Early Identity · The Dream Before the Cost</p>
+        <div class="oracle-grid">
+          <div class="oracle-card"><div class="num">A♣</div><div class="title">The Arrival</div><div class="track">"Hello"</div><div class="keywords">The entry point · The first voice on the record</div></div>
+          <div class="oracle-card"><div class="num">2♣</div><div class="title">The Plastic Dream</div><div class="track">"Plastic Dreams"</div><div class="keywords">Artifice · Superficial goals · Chasing the flash</div></div>
+          <div class="oracle-card"><div class="num">3♣</div><div class="title">The Lady Killer</div><div class="track">"Lady Killers"</div><div class="keywords">Early charisma · The harmless rogue archetype</div></div>
+          <div class="oracle-card"><div class="num">4♣</div><div class="title">The Rage</div><div class="track">"Mad"</div><div class="keywords">Frustration · The pressure before the break</div></div>
+          <div class="oracle-card"><div class="num">5♣</div><div class="title">The Breath</div><div class="track">"Breathe"</div><div class="keywords">Inhale · Finding pace in the chaos</div></div>
+          <div class="oracle-card"><div class="num">6♣</div><div class="title">The Icon</div><div class="track">"Marilyn"</div><div class="keywords">Fascination with fame's casualties · The muse</div></div>
+          <div class="oracle-card"><div class="num">7♣</div><div class="title">The High</div><div class="track">"Stay High"</div><div class="keywords">Elevation · Numbing the climb</div></div>
+          <div class="oracle-card"><div class="num">8♣</div><div class="title">The Hunger</div><div class="track">"Must Be Nice"</div><div class="keywords">Ambition · The core drive · Bay Area grit</div></div>
+          <div class="oracle-card"><div class="num">9♣</div><div class="title">The Weight</div><div class="track">"Loaded"</div><div class="keywords">Burden of potential · Early success pressure</div></div>
+          <div class="oracle-card"><div class="num">10♣</div><div class="title">The Mirror</div><div class="track">Must Be Nice (Album Whole)</div><div class="keywords">Self-reflection · Looking at the project as a single entity</div></div>
+          <div class="oracle-card"><div class="num">J♣</div><div class="title">The Outsider</div><div class="track">Pre-fame identity</div><div class="keywords">The kid watching from outside the industry</div></div>
+          <div class="oracle-card"><div class="num">Q♣</div><div class="title">The Romantic</div><div class="track">The early muse archetype</div><div class="keywords">The woman on every early track · A ghost of inspiration</div></div>
+          <div class="oracle-card"><div class="num">K♣</div><div class="title">The Oakland King</div><div class="track">Bay Area roots</div><div class="keywords">The territory that made him · Foundation</div></div>
+        </div>
+
+        <div class="suit-divider">
+          <h3 style="margin:0;">♦ Diamonds — These Things Happen (2014)</h3>
+        </div>
+        <p class="suit-desc">Ambition · Consequence · The Major Label Arrival · Moody Atmospheric Truth</p>
+        <div class="oracle-grid">
+          <div class="oracle-card"><div class="num">A♦</div><div class="title">The Reckoning</div><div class="track">"These Things Happen"</div><div class="keywords">Acceptance of fate · The major label arrival</div></div>
+          <div class="oracle-card"><div class="num">2♦</div><div class="title">The Alliance</div><div class="track">"Far Alone"</div><div class="keywords">Distance created by success · New circles</div></div>
+          <div class="oracle-card"><div class="num">3♦</div><div class="title">The Intention</div><div class="track">"I Mean It"</div><div class="keywords">Declaration of purpose · Drawing a line</div></div>
+          <div class="oracle-card"><div class="num">4♦</div><div class="title">The Almost</div><div class="track">"Almost Famous"</div><div class="keywords">The threshold of stardom · The tension of 'almost'</div></div>
+          <div class="oracle-card"><div class="num">5♦</div><div class="title">The Cost</div><div class="track">"Opportunity Cost"</div><div class="keywords">Sacrifice of the come-up · Relationships lost</div></div>
+          <div class="oracle-card"><div class="num">6♦</div><div class="title">The Digital Girl</div><div class="track">"Tumblr Girls"</div><div class="keywords">Internet-era romance · The aestheticized muse</div></div>
+          <div class="oracle-card"><div class="num">7♦</div><div class="title">The Flood</div><div class="track">"Lotta That"</div><div class="keywords">Excess · The overwhelming nature of the lifestyle</div></div>
+          <div class="oracle-card"><div class="num">8♦</div><div class="title">The Downtown Ache</div><div class="track">"Downtown Love"</div><div class="keywords">Urban melancholy · Transient connections</div></div>
+          <div class="oracle-card"><div class="num">9♦</div><div class="title">The Whole</div><div class="track">"Complete"</div><div class="keywords">Brief clarity · Finding temporary peace in the storm</div></div>
+          <div class="oracle-card"><div class="num">10♦</div><div class="title">The Lost</div><div class="track">"Let's Get Lost"</div><div class="keywords">Escapism · The desire to vanish together</div></div>
+          <div class="oracle-card"><div class="num">J♦</div><div class="title">The Wound</div><div class="track">"Shoot Me Down"</div><div class="keywords">Vulnerability · The first signs of damage</div></div>
+          <div class="oracle-card"><div class="num">Q♦</div><div class="title">The Memory</div><div class="track">"Remember You"</div><div class="keywords">Haunting nostalgia · What stays behind</div></div>
+          <div class="oracle-card"><div class="num">K♦</div><div class="title">The Believer</div><div class="track">"Just Believe"</div><div class="keywords">Faith in the process · Closing the era with purpose</div></div>
+        </div>
+
+        <div class="suit-divider">
+          <h3 style="margin:0;">♥ Hearts — The Beautiful & Damned (2017)</h3>
+        </div>
+        <p class="suit-desc">Duality · Love & Destruction · Fame's True Cost · The Double Life</p>
+        <div class="oracle-grid">
+          <div class="oracle-card"><div class="num">A♥</div><div class="title">The Duality</div><div class="track">"The Beautiful & Damned"</div><div class="keywords">The core conflict · The split persona</div></div>
+          <div class="oracle-card"><div class="num">2♥</div><div class="title">The Prayer</div><div class="track">"Pray For Me"</div><div class="keywords">Seeking salvation · Acknowledging the fall</div></div>
+          <div class="oracle-card"><div class="num">3♥</div><div class="title">The Mirror Lovers</div><div class="track">"Him & I"</div><div class="keywords">Codependency · The Bonnie & Clyde illusion</div></div>
+          <div class="oracle-card"><div class="num">4♥</div><div class="title">The Fantasy</div><div class="track">"But A Dream"</div><div class="keywords">Waking up from the high life · The hangover</div></div>
+          <div class="oracle-card"><div class="num">5♥</div><div class="title">The Clarity</div><div class="track">"Sober"</div><div class="keywords">The fog lifting · Uncomfortable truths</div></div>
+          <div class="oracle-card"><div class="num">6♥</div><div class="title">The Legacy</div><div class="track">"Legend"</div><div class="keywords">Ego · The obsession with what is left behind</div></div>
+          <div class="oracle-card"><div class="num">7♥</div><div class="title">The No</div><div class="track">"No Limit"</div><div class="keywords">Unchecked ambition · The peak of the ego</div></div>
+          <div class="oracle-card"><div class="num">8♥</div><div class="title">The Crash</div><div class="track">"Crash & Burn"</div><div class="keywords">Inevitable collapse · The consequence of the high</div></div>
+          <div class="oracle-card"><div class="num">9♥</div><div class="title">The Season</div><div class="track">"Summer In December"</div><div class="keywords">Displacement · Coldness setting in</div></div>
+          <div class="oracle-card"><div class="num">10♥</div><div class="title">The Inheritance</div><div class="track">"Charles Brown"</div><div class="keywords">Generational weight · The burden passed down</div></div>
+          <div class="oracle-card"><div class="num">J♥</div><div class="title">The Beast</div><div class="track">"Leviathan"</div><div class="keywords">The consuming monster of fame · The shadow self</div></div>
+          <div class="oracle-card"><div class="num">Q♥</div><div class="title">The Mother</div><div class="track">"Mama Always Told Me"</div><div class="keywords">The grounding force · Wisdom ignored until too late</div></div>
+          <div class="oracle-card"><div class="num">K♥</div><div class="title">The Beautiful</div><div class="track">"Eazy"</div><div class="keywords">Self-acceptance · The self-named closing card</div></div>
+        </div>
+
+        <div class="suit-divider">
+          <h3 style="margin:0;">♠ Spades — Everything's Strange Here (2020)</h3>
+        </div>
+        <p class="suit-desc">Isolation · Introspection · Reinvention · Static</p>
+        <div class="oracle-grid">
+          <div class="oracle-card"><div class="num">A♠</div><div class="title">The Fool's Reimagining</div><div class="track">"Everybody's Gotta Learn Sometime"</div><div class="keywords">Departure · Reinvention · Unlearning</div></div>
+          <div class="oracle-card"><div class="num">2♠</div><div class="title">The Quarantine</div><div class="track">"Everything's Strange Here"</div><div class="keywords">Isolation · Forced Stillness · Global Static</div></div>
+          <div class="oracle-card"><div class="num">3♠</div><div class="title">The Temptation</div><div class="track">"Free Porn Cheap Drugs"</div><div class="keywords">Dopamine Loops · Cheap Escapes · Numbing</div></div>
+          <div class="oracle-card"><div class="num">4♠</div><div class="title">The Broken Heart</div><div class="track">"Had Enough"</div><div class="keywords">Resentment · Closure · Bitter Realizations</div></div>
+          <div class="oracle-card"><div class="num">5♠</div><div class="title">The Ghost of Nostalgia</div><div class="track">"Nostalgia Cycle"</div><div class="keywords">Romanticizing the Past · Idealization</div></div>
+          <div class="oracle-card"><div class="num">6♠</div><div class="title">The Existentialist</div><div class="track">"In The Middle"</div><div class="keywords">Purpose · Questioning Reality · Emptiness</div></div>
+          <div class="oracle-card"><div class="num">7♠</div><div class="title">The Resurrection</div><div class="track">"Lazarus"</div><div class="keywords">Rebirth · Artistic Survival · Shedding Weight</div></div>
+          <div class="oracle-card"><div class="num">8♠</div><div class="title">The Echo</div><div class="track">"Stan By Me"</div><div class="keywords">Longing · Unanswered Calls · Toxic Patterns</div></div>
+          <div class="oracle-card"><div class="num">9♠</div><div class="title">The Faded Frame</div><div class="track">"Back To What You Knew"</div><div class="keywords">Regression · Safety Nets · Outgrown Spaces</div></div>
+          <div class="oracle-card"><div class="num">10♠</div><div class="title">The Satellite</div><div class="track">"All The Things You're Searching For"</div><div class="keywords">External Validation · Seeking Signals</div></div>
+          <div class="oracle-card"><div class="num">J♠</div><div class="title">The Burning Year</div><div class="track">"Every Night Of The Year"</div><div class="keywords">Exhaustion · Cumulative Stress · Burnout</div></div>
+          <div class="oracle-card"><div class="num">Q♠</div><div class="title">The Static</div><div class="track">*The noise between songs*</div><div class="keywords">Quarantine as a state of being</div></div>
+          <div class="oracle-card"><div class="num">K♠</div><div class="title">The Signal</div><div class="track">*The breakthrough*</div><div class="keywords">The other side of the silence</div></div>
+        </div>
+
+        <div class="spread-layout">
+          <h3>The Strange Frequencies Spread</h3>
+          <div class="spread-grid">
+            <div class="spread-card bold"><span>Card 3</span> The Distraction</div>
+            <div class="spread-row">
+              <div class="spread-card"><span>Card 1</span> The Static</div>
+              <div class="spread-card"><span>Card 2</span> The Room</div>
+              <div class="spread-card bold"><span>Card 5</span> The Breakthrough</div>
+            </div>
+            <div class="spread-card bold"><span>Card 4</span> The Unsent Voice</div>
+          </div>
+          <p style="margin-top: 30px; font-size: 0.85rem; color: var(--muted);">CAUTION: CONTAINS HIGH LEVELS OF INTROSPECTION.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: DECK 2 - THE FEATURES DECK -->
+    <section id="deck2" class="oracle-section">
+      <div class="vhs-overlay"></div>
+      <div class="oracle-content">
+        <div class="eyebrow">DECK 2: THE FEATURES DECK // 52 CARDS</div>
+        <h2>The Gemini Shadow Oracle</h2>
+        <p class="lede">The collaborator as a different person. 52 non-album tracks, soundtrack loosies, and mixtape cuts where the shadow side shows up in someone else's world. Same four suits, inverted intent.</p>
+
+        <div class="suit-divider">
+          <h3 style="margin:0;">♣ Clubs — Street, Credibility & West Coast Collabs</h3>
+        </div>
+        <p class="suit-desc">Bay Area Passes · Hip-Hop Co-Signs · Proving Ground · The Turf</p>
+        <div class="oracle-grid">
+          <div class="oracle-card"><div class="num">A♣</div><div class="title">The Ambassador</div><div class="track">E-40 – "Give Her Keys" (feat. G-Eazy)</div><div class="keywords">The Bay Area co-sign · Proving ground</div></div>
+          <div class="oracle-card"><div class="num">2♣</div><div class="title">The Legacy Pass</div><div class="track">Mistah F.A.B. – "Still Feelin' It" (Remix)</div><div class="keywords">Hyphy movement lineage · Respect earned</div></div>
+          <div class="oracle-card"><div class="num">3♣</div><div class="title">The Heavyweight</div><div class="track">Rick Ross – "Purple Brick Road" (feat. G-Eazy)</div><div class="keywords">Entering the boss tier · Street credibility</div></div>
+          <div class="oracle-card"><div class="num">4♣</div><div class="title">The Pivot</div><div class="track">Vic Mensa – "Reverse" (feat. G-Eazy)</div><div class="keywords">Changing lanes · Adapting to new flows</div></div>
+          <div class="oracle-card"><div class="num">5♣</div><div class="title">The Mob Tie</div><div class="track">A$AP TyY – "Trump" (feat. G-Eazy & Young Lord)</div><div class="keywords">NYC connection · Shadow work</div></div>
+          <div class="oracle-card"><div class="num">6♣</div><div class="title">The Forbes List</div><div class="track">Borgore – "Forbes" (feat. G-Eazy)</div><div class="keywords">Chasing the bag · Early wealth flex</div></div>
+          <div class="oracle-card"><div class="num">7♣</div><div class="title">The Terror</div><div class="track">Carnage – "Gokilla" (feat. G-Eazy & E-40)</div><div class="keywords">Aggressive energy · Pure chaos</div></div>
+          <div class="oracle-card"><div class="num">8♣</div><div class="title">The Catalyst</div><div class="track">"Runaround Sue" (feat. Greg Banks)</div><div class="keywords">The college era breakout · Sample-flipping</div></div>
+          <div class="oracle-card"><div class="num">9♣</div><div class="title">The Local Hero</div><div class="track">"Well Known" (Mixtape)</div><div class="keywords">Pre-fame Bay Area swagger · Street buzz</div></div>
+          <div class="oracle-card"><div class="num">10♣</div><div class="title">The Preppy Rogue</div><div class="track">"Waspy" (feat. Tennis)</div><div class="keywords">Frat-rap aesthetics · The contrast of privilege</div></div>
+          <div class="oracle-card"><div class="num">J♣</div><div class="title">The Habit</div><div class="track">"Reefer Madness" (Mixtape)</div><div class="keywords">Early vices · The smoke screen</div></div>
+          <div class="oracle-card"><div class="num">Q♣</div><div class="title">The Hall of Famer</div><div class="track">"It's E-40" (B-Sides EP)</div><div class="keywords">Standing with the legends · Passing the torch</div></div>
+          <div class="oracle-card"><div class="num">K♣</div><div class="title">The Bang</div><div class="track">"Bang" (feat. Tyga) (B-Sides EP)</div><div class="keywords">Strip club anthems · West Coast unity</div></div>
+        </div>
+
+        <div class="suit-divider">
+          <h3 style="margin:0;">♦ Diamonds — Industry, Status & Mainstream Pop</h3>
+        </div>
+        <p class="suit-desc">Power-Move Features · Pop Crossover · Blockbuster Syncs · The Main Stage</p>
+        <div class="oracle-grid">
+          <div class="oracle-card"><div class="num">A♦</div><div class="title">The Pop Throne</div><div class="track">Britney Spears – "Make Me..." (feat. G-Eazy)</div><div class="keywords">Mainstream infiltration · Pop royalty</div></div>
+          <div class="oracle-card"><div class="num">2♦</div><div class="title">The Festival</div><div class="track">Dillon Francis – "Say Less" (feat. G-Eazy)</div><div class="keywords">EDM crossover · The main stage</div></div>
+          <div class="oracle-card"><div class="num">3♦</div><div class="title">The Blockbuster</div><div class="track">Jeremih – "Saw It Coming" (feat. G-Eazy)</div><div class="keywords">Hollywood syncs · Commercial peak</div></div>
+          <div class="oracle-card"><div class="num">4♦</div><div class="title">The Flex</div><div class="track">Chris Brown – "Wobble Up" (feat. G-Eazy)</div><div class="keywords">Elite tier features · The R&B/Rap nexus</div></div>
+          <div class="oracle-card"><div class="num">5♦</div><div class="title">The Co-Sign</div><div class="track">Snoop Dogg – "Light My Body Up" (feat. G-Eazy)</div><div class="keywords">The West Coast icon stamp · Universal approval</div></div>
+          <div class="oracle-card"><div class="num">6♦</div><div class="title">The Runway</div><div class="track">Wale – "Fashion Week" (feat. G-Eazy)</div><div class="keywords">High-fashion identity · Industry validation</div></div>
+          <div class="oracle-card"><div class="num">7♦</div><div class="title">The Anthem</div><div class="track">"1942" (with Yo Gotti & YBN Nahmir)</div><div class="keywords">Sports syncs · Generational bridge</div></div>
+          <div class="oracle-card"><div class="num">8♦</div><div class="title">The Next Gen</div><div class="track">"Moana" (with Jack Harlow)</div><div class="keywords">Passing the baton · The new class</div></div>
+          <div class="oracle-card"><div class="num">9♦</div><div class="title">The Gathering</div><div class="track">"Still Be Friends" (with Tory Lanez & Tyga)</div><div class="keywords">The hitmaker formula · Radio dominance</div></div>
+          <div class="oracle-card"><div class="num">10♦</div><div class="title">The Sample</div><div class="track">"Provide" (feat. Chris Brown & Mark Morrison)</div><div class="keywords">Nostalgia meeting modern R&B</div></div>
+          <div class="oracle-card"><div class="num">J♦</div><div class="title">The Trend</div><div class="track">"I Wanna Rock" (feat. Gunna) (Scary Nights EP)</div><div class="keywords">Trap adaptation · Riding the new wave</div></div>
+          <div class="oracle-card"><div class="num">Q♦</div><div class="title">The Excess</div><div class="track">Carnage – "Loaded" (feat. G-Eazy)</div><div class="keywords">The DJ collab · Unfiltered celebration</div></div>
+          <div class="oracle-card"><div class="num">K♦</div><div class="title">The West Coast Elite</div><div class="track">YG – "Do Not Disturb" (feat. Kamaiyah & G-Eazy)</div><div class="keywords">The summit of California rap</div></div>
+        </div>
+
+        <div class="suit-divider">
+          <h3 style="margin:0;">♥ Hearts — Romantic, Pop & Intimate Duets</h3>
+        </div>
+        <p class="suit-desc">Toxic Collaborations · Pop Duets · The Feminine Mirror · Public Romance</p>
+        <div class="oracle-grid">
+          <div class="oracle-card"><div class="num">A♥</div><div class="title">The Celebration</div><div class="track">Kehlani & G-Eazy – "Good Life"</div><div class="keywords">The victory lap · Singing for the champagne</div></div>
+          <div class="oracle-card"><div class="num">2♥</div><div class="title">The Fracture</div><div class="track">Demi Lovato – "Breakdown" (feat. G-Eazy)</div><div class="keywords">The public fallout · Pop-star vulnerability</div></div>
+          <div class="oracle-card"><div class="num">3♥</div><div class="title">The Co-Conspirator</div><div class="track">Bebe Rexha – "F.F.F." (feat. G-Eazy)</div><div class="keywords">The pop-punk alliance · Middle finger to industry</div></div>
+          <div class="oracle-card"><div class="num">4♥</div><div class="title">The Tender Vow</div><div class="track">Marc E. Bassy – "You & Me" (feat. G-Eazy)</div><div class="keywords">Bay Area R&B · Intimate promises</div></div>
+          <div class="oracle-card"><div class="num">5♥</div><div class="title">The Declaration</div><div class="track">Grace – "You Don't Own Me" (feat. G-Eazy)</div><div class="keywords">Reclaiming agency · The feminist anthem flip</div></div>
+          <div class="oracle-card"><div class="num">6♥</div><div class="title">The Fallen Muse</div><div class="track">"Angel Cry" (feat. Devon Baldwin)</div><div class="keywords">Haunting melodies · The tragic companion</div></div>
+          <div class="oracle-card"><div class="num">7♥</div><div class="title">The Siren</div><div class="track">"Femme Fatale" (feat. Coi Leray & Kaliii)</div><div class="keywords">The dangerous woman · Modern toxic loop</div></div>
+          <div class="oracle-card"><div class="num">8♥</div><div class="title">The Toxic Cycle</div><div class="track">"Hate the Way" (feat. blackbear)</div><div class="keywords">Digital-age heartbreak · Repeating arguments</div></div>
+          <div class="oracle-card"><div class="num">9♥</div><div class="title">The Distant Lover</div><div class="track">Raiden & Chanyeol – "Yours" (feat. G-Eazy)</div><div class="keywords">K-Pop crossover · Long-distance longing</div></div>
+          <div class="oracle-card"><div class="num">10♥</div><div class="title">The Echo</div><div class="track">Leony & Felix Jaehn – "By Your Side Pt. II" (feat. G-Eazy)</div><div class="keywords">Memory of presence · The electronic ache</div></div>
+          <div class="oracle-card"><div class="num">J♥</div><div class="title">The Faded Star</div><div class="track">Leony – "Rock n Roll" (feat. G-Eazy)</div><div class="keywords">The rockstar facade · Living the cliché</div></div>
+          <div class="oracle-card"><div class="num">Q♥</div><div class="title">The Quick Fix</div><div class="track">Bear Bailey – "BANDAID" (feat. G-Eazy)</div><div class="keywords">Temporary solutions · Covering the wound</div></div>
+          <div class="oracle-card"><div class="num">K♥</div><div class="title">The Fantasy</div><div class="track">Britney Spears – "Make Me..." (feat. G-Eazy)</div><div class="keywords">The ultimate pop dream · Climax of the crossover</div></div>
+        </div>
+
+        <div class="suit-divider">
+          <h3 style="margin:0;">♠ Spades — The Guest Appearances & Shadow Side</h3>
+        </div>
+        <p class="suit-desc">Showing Up in Foreign Worlds · Mixtape Alter-Egos · The Shadow Self</p>
+        <div class="oracle-grid">
+          <div class="oracle-card"><div class="num">A♠</div><div class="title">The Alter Ego</div><div class="track">Step Brothers EP (with Carnage)</div><div class="keywords">The dual persona · The industry shadow</div></div>
+          <div class="oracle-card"><div class="num">2♠</div><div class="title">The Cutting Room</div><div class="track">B-Sides EP (2019)</div><div class="keywords">The rejected tracks · The in-between spaces</div></div>
+          <div class="oracle-card"><div class="num">3♠</div><div class="title">The Off-Season</div><div class="track">Scary Nights EP (2019)</div><div class="keywords">The Halloween drop · Spooky aesthetics</div></div>
+          <div class="oracle-card"><div class="num">4♠</div><div class="title">The Endless Grind</div><div class="track">The Endless Summer Mixtape (2011)</div><div class="keywords">The pre-fame hustle · The foundation</div></div>
+          <div class="oracle-card"><div class="num">5♠</div><div class="title">The Shadow Lab</div><div class="track">The Quarantine Experiment (2020)</div><div class="keywords">Isolation creations · The raw unfiltered feed</div></div>
+          <div class="oracle-card"><div class="num">6♠</div><div class="title">The Revival</div><div class="track">"Lady Killers II" (Christoph Andersson Remix)</div><div class="keywords">The viral resurgence · The TikTok rebirth</div></div>
+          <div class="oracle-card"><div class="num">7♠</div><div class="title">The Double Threat</div><div class="track">"Lady Killers" (feat. Hoodie Allen)</div><div class="keywords">The blog-rap era · The frat-rap alliance</div></div>
+          <div class="oracle-card"><div class="num">8♠</div><div class="title">The Ghost</div><div class="track">"Marilyn" (feat. Dominique LeJeune)</div><div class="keywords">The haunting chorus · The tragic icon worship</div></div>
+          <div class="oracle-card"><div class="num">9♠</div><div class="title">The Illusionist</div><div class="track">"Plastic Dreams" (feat. Johanna Fay)</div><div class="keywords">The artificial world · The early dream</div></div>
+          <div class="oracle-card"><div class="num">10♠</div><div class="title">The Fury</div><div class="track">"Mad" (feat. Devon Baldwin)</div><div class="keywords">Frustration of the unknown · The boiling point</div></div>
+          <div class="oracle-card"><div class="num">J♠</div><div class="title">The Numbing</div><div class="track">"Free Porn Cheap Drugs" (Quarantine Experiment)</div><div class="keywords">The quarantine coping mechanism · The dopamine trap</div></div>
+          <div class="oracle-card"><div class="num">Q♠</div><div class="title">The Loop</div><div class="track">"Nostalgia Cycle" (Quarantine Experiment)</div><div class="keywords">The repeating memory · The static</div></div>
+          <div class="oracle-card"><div class="num">K♠</div><div class="title">The Observer</div><div class="track">"Stan by Me" (Quarantine Experiment)</div><div class="keywords">Reaching out into the void · The unanswered call</div></div>
+        </div>
+      </div>
+    </section>
+
     <section id="market">
       <h2>Useful in the present market</h2>
       <div class="grid">
@@ -81,6 +329,9 @@
       <p><a class="cta" href="https://www.livenation.com/artist/K8vZ917uAkf/g-eazy-events">Official tour listings</a></p>
     </section>
   </main>
-  <footer>Practice → Evidence → Reflection → Analysis → Contribution<br>Research prototype. Fair-use rationale documented; legal review required. Corrections and substantiated provenance are welcome.</footer>
+  <footer>
+    Practice → Evidence → Reflection → Analysis → Contribution<br>
+    Research prototype. Fair-use rationale documented; legal review required. Corrections and substantiated provenance are welcome.
+  </footer>
 </body>
 </html>
