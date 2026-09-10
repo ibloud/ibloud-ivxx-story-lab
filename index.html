@@ -117,6 +117,9 @@
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
     .card { padding: 22px; border: 1px solid var(--line); background: var(--panel); }
     .card strong { display: block; color: var(--cyan); margin-bottom: 7px; }
+    .story-poster { display: block; width: 100%; height: auto; margin: 24px 0; border: 1px solid var(--line); box-shadow: 0 0 34px rgba(16,191,238,0.12); }
+    .story-question { max-width: 900px; margin: 24px 0; padding: 20px 22px; border-left: 3px solid var(--acid); background: var(--notice-bg); font: clamp(1.2rem, 2.5vw, 1.65rem)/1.45 Georgia, serif; }
+    .status-note { color: var(--muted); font-size: .9rem; }
     .spine { counter-reset: act; display: grid; gap: 12px; }
     .beat { counter-increment: act; display: grid; grid-template-columns: 48px 1fr; gap: 14px; padding: 16px 0; border-top: 1px solid var(--line); }
     .beat::before { content: counter(act, decimal-leading-zero); color: var(--acid); font-weight: 700; }
@@ -160,7 +163,8 @@
     </div>
     <nav aria-label="Primary">
       <a href="#pattern">Pattern</a>
-      <a href="#story">Story</a>
+      <a href="#story-premise">Story premise</a>
+      <a href="#story">Story structure</a>
       <a href="#sound">Sound</a>
       <a href="#oracle">Deck 1</a>
       <a href="#deck2">Deck 2</a>
@@ -178,6 +182,20 @@
         <div class="card"><strong>Persistent witness</strong>IBLoud IVXX retains fragments, but does not convert association into unsupported fact.</div>
         <div class="card"><strong>Musical navigation</strong>Tracks locate shifts in agency, obsession, danger, pain and exit.</div>
         <div class="card"><strong>Ethical resolution</strong>The archive documents public meaning-making while refusing claims about private reality.</div>
+      </div>
+    </section>
+
+    <section id<section id="story-premise" class="oracle-section">
+      <div class="vhs-overlay"></div>
+      <div class="oracle-content">
+        <div class="eyebrow">Public story / fictionalized development concept</div>
+        <h2>The hacker and the rapper</h2>
+        <img class="story-poster" src="assets/the-signal-between-us-concept-poster.png" alt="Concept poster for The Signal Between Us. A fictional woman systems researcher and a fictional male music performer stand on opposite sides of a fractured green and cyan signal inside a dark digital city.">
+        <p>A hacker does not break into a rapper's private life. She enters the public machine built around him: feeds, deleted posts, headlines, recommendation systems, music fragments and fan certainty. What begins as an attempt to reconstruct one missing pitch becomes a confrontation with a system that turns attention into ownership.</p>
+        <p>The rapper first experiences the hacker as a threat. She appears to know too much because the network has made scattered public facts feel intimate. The hacker confronts the opposite problem: access is not permission, correlation is not truth, and an archive can harm the people it claims to preserve.</p>
+        <p class="story-question">Can two creators recover agency from a system that profits when audiences confuse public signals with private truth?</p>
+        <p class="status-note"><strong>Interpretive + Fictionalized.</strong> This premise is not a factual claim about any named artist, hacker, relationship or private event. It is not represented as recovery of the missing Tumblr pitch.</p>
+        <a class="cta" href="STORY-TREATMENT.md">Read the full treatment and provenance</a>
       </div>
     </section>
 
