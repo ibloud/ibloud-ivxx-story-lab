@@ -1,6 +1,6 @@
 # Sources and Verification Notes
 
-Accessed September 5, 2026 unless otherwise stated.
+Project sources were first reviewed September 5, 2026. Lex Nova/Thoolie materials and the hacker-and-rapper provenance note were reviewed September 10, 2026.
 
 ## Project sources
 
@@ -11,6 +11,12 @@ Accessed September 5, 2026 unless otherwise stated.
 - Battle the Beast repository: <https://github.com/ibloud/battle-the-beast>
 
 Tumblr pages should be archived through creator-controlled exports before post-level claims are added. A live URL alone does not establish a durable chronology.
+
+## Missing-pitch search note
+
+The supplied URL `https://tumblr.tumblr.com/archive` resolved to Tumblr's corporate archive rather than a personal dashboard or IBLoud/Loptr Lab feed. Review of the known project sources did not identify a single verified post containing the remembered “hacker and rapper” pitch.
+
+Accordingly, [STORY-TREATMENT.md](STORY-TREATMENT.md) is labeled **Interpretive + Fictionalized**. It synthesizes visible project themes; it is not represented as a recovered post. If the original post is found, preserve its creator, date, URL and export/screenshot, then compare it to the treatment as a new documented source.
 
 ## Public event sources
 
@@ -27,15 +33,19 @@ These sources document public appearances, footage and resulting speculation. Th
 
 Public listings identify a 23-show tour running September 15 through October 28, 2026. Verify individual dates against the official ticket page before publishing time-sensitive copy.
 
-## Rights and AI sources
+## Rights, waterfall and AI sources
 
+- Lex Nova Lawyer resource hub: <https://linktr.ee/lexnovalawyer>
+- Reena Sehgal, “How Film Revenue Waterfalls Work,” Thoolie, May 31, 2026: <https://thoolie.com/guides/how-film-revenue-waterfalls-work/>
+- Thoolie Team, “Music Clearance for Independent Filmmakers,” August 19, 2026: <https://thoolie.com/creator_resource/music-clearance-independent-filmmakers/>
+- Thoolie Team, “AI Films, Copyright, and Chain of Title,” July 1, 2026: <https://thoolie.com/2026/07/01/ai-generated-film-copyright-chain-of-title>
 - Suno Terms of Service: <https://suno.com/terms-of-service>
 - Suno ownership guidance: <https://help.suno.com/en/articles/2416769>
 - U.S. Copyright Office AI initiative and reports: <https://www.copyright.gov/ai/>
 - U.S. Copyright Office Part 2 report on copyrightability: <https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf>
-- Lex Nova Lawyer/Thoolie resources: <https://linktr.ee/lexnovalawyer>
+
+Lex Nova/Thoolie describes these materials as educational and not individualized legal advice. Their inclusion documents the research route; it does not establish clearance, attorney representation or endorsement.
 
 ## Source policy
 
-Prefer primary posts, official ticket listings, contracts, copyright records and platform terms. Preserve date, URL, creator, screenshot/export provenance and truth-status label. Corrections should amend the repository rather than silently overwriting the historical record.
-
+Prefer primary posts, official ticket listings, executed agreements, copyright records and platform terms. Preserve date, URL, creator, screenshot/export provenance and truth-status label. Historical/archive materials remain provenance and do not silently become current rules. Corrections should amend the repository rather than overwrite the historical record without explanation.
