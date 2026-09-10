@@ -22,9 +22,10 @@ This is a fictionalized development premise—not a factual claim about any name
 
 For a first evaluation, read:
 
-1. [PITCH-ONE-SHEET.md](PITCH-ONE-SHEET.md) — premise, format, audience, five-part movement, package status and ask
-2. [SCREENPLAY-SAMPLE.md](SCREENPLAY-SAMPLE.md) — an original fictional opening sample of approximately seven screenplay pages
-3. [COLLABORATION.md](COLLABORATION.md) — evaluation lanes, submission boundaries and a public inquiry route
+1. [PORTFOLIO-CASE-STUDY.md](PORTFOLIO-CASE-STUDY.md) — hiring-focused account of the problem, role, decisions, deliverables and skills demonstrated
+2. [PITCH-ONE-SHEET.md](PITCH-ONE-SHEET.md) — premise, format, audience, five-part movement, package status and ask
+3. [SCREENPLAY-SAMPLE.md](SCREENPLAY-SAMPLE.md) — an original fictional opening sample of approximately seven screenplay pages
+4. [COLLABORATION.md](COLLABORATION.md) — evaluation lanes, submission boundaries and a public inquiry route
 
 This package requests a development conversation. It does not presume participation, endorsement, confidentiality, representation, clearance or a transfer of rights.
 
@@ -134,6 +135,7 @@ Standing rule: **Label fiction. Verify authorization. Respect creators. Never co
 
 ## Repository guide
 
+- [PORTFOLIO-CASE-STUDY.md](PORTFOLIO-CASE-STUDY.md) — hiring-focused case study and recommended portfolio reading order
 - [PITCH-ONE-SHEET.md](PITCH-ONE-SHEET.md) — first-look creative and market pitch
 - [SCREENPLAY-SAMPLE.md](SCREENPLAY-SAMPLE.md) — fictional opening screenplay sample
 - [COLLABORATION.md](COLLABORATION.md) — explicit ask, boundaries and response path
