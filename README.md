@@ -10,7 +10,7 @@ An independent narrative-and-music research repository documenting how a public 
 
 ## Public story: the hacker and the rapper
 
-A hacker does not break into a rapper's private life. She enters the public machine built around him: feeds, deleted posts, headlines, recommendation systems, music fragments and fan certainty. What begins as an attempt to reconstruct one missing pitch becomes a confrontation with a larger system that turns attention into ownership.
+A hacker does not break into a rapper's private life. She enters the public machine built around him: feeds, posts, headlines, recommendation systems, music fragments and fan certainty. The documented 2024 Gerryland story places her in collision with an Artist after a partner takes her code and presents it to him as an MVP. Neither realizes that both are fighting for creative integrity while the people around them benefit from keeping them apart. The later treatment develops that premise into a confrontation with a larger system that turns attention into ownership.
 
 The rapper first experiences the hacker as a threat. She seems to know too much because the network has made scattered public facts feel intimate. The hacker discovers the opposite problem: access to information is not permission, correlation is not truth, and an archive can harm the people it claims to preserve.
 
@@ -31,7 +31,16 @@ This package requests a development conversation. It does not presume participat
 
 ## How this story was sourced
 
-OpenAI/ChatGPT did not locate a single verified post containing the remembered “hacker and rapper” pitch. The supplied URL resolved to Tumblr's corporate archive rather than a personal feed. The assistant then reviewed the project sources named by Dominique Devereaux—Loptr Lab, Gerryland/Our Bad Habit, IBLoud IVXX, Audio.com, and the repository's existing G-Eazy research—and assembled a story pattern from the themes visible across those materials.
+The first search followed the supplied URL to Tumblr's corporate archive and did not recover the remembered pitch. A direct live search of the creator-controlled Gerryland and Loptr Lab blogs on September 11, 2026 then located the underlying 2024 posts.
+
+The documented source architecture includes:
+
+- [“The Artist / The Hacker”](https://gerryland.tumblr.com/post/749383363140403200/the-artist-has-outgrown-his-high-school-goals), May 2, 2024 — parallel character arcs built around loyalty, blind love, technology and “the process”;
+- [“The Collision”](https://gerryland.tumblr.com/post/749384741799739392/the-collision), May 2, 2024 — the Hacker's partner takes her code and presents it to the Artist as an MVP; both unknowingly fight for the same goal;
+- [“The Hacker Takes a Chance and Shares an Analysis for the Artist's Investor”](https://gerryland.tumblr.com/post/749390139098349568/the-hacker-takes-a-chance-and-shares-an-analysis), May 2, 2024 — modular creative workflow, artist needs and the Hacker as a bridge; and
+- [“Storytelling Fact”](https://loptrlab.tumblr.com/post/752455386230095872/storytelling-fact), June 5, 2024 — a video post tagged `#swordfish`, `#hacker`, `#celebrity crush` and `#g-eazy`.
+
+The 2024 posts establish the Hacker/Artist roles, stolen-MVP collision, investor-analysis action and creative-technology bridge. The title *The Signal Between Us*, screenplay scenes, dialogue, expanded network antagonist and ethical resolution were developed in 2026 as interpretation and fiction.
 
 That means:
 
@@ -43,7 +52,7 @@ That means:
 | **Fictionalized** | Deliberately invented plot, character action or dialogue |
 | **Unresolved** | A remembered source or design decision not yet verified |
 
-The hacker-and-rapper treatment is **Interpretive + Fictionalized**. It must not be cited as recovery of the missing Tumblr post. If that post is later found, it should be archived as a new documented source and compared against this treatment without silently rewriting the provenance record.
+The treatment is **Documented Source Architecture + Interpretive + Fictionalized**. The linked 2024 posts may be cited for what they actually state. They do not document the later screenplay scenes, private conduct, dialogue, artist participation or endorsement. Creator-controlled exports or screenshots should still be preserved for durable chronology.
 
 **Authorship note:** Dominique Devereaux supplied the underlying project, archives, characters, themes and direction. OpenAI/ChatGPT helped organize, label and articulate the visible architecture. AI assistance is not evidence that the underlying story originated with AI.
 
