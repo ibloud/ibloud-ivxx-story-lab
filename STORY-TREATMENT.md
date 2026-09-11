@@ -4,16 +4,16 @@
 
 **Format:** Feature film or five-part limited series  
 **Genre:** Techno-noir music drama / transmedia mystery  
-**Status:** Interpretive and fictionalized development material  
+**Status:** Documented source architecture + interpretive and fictionalized development material  
 **Authorship:** Story world and source archive by Dominique Devereaux; structure and prose organized with OpenAI/ChatGPT assistance
 
 ### Logline
 
-When an independent hacker tries to reconstruct a lost pitch from fragments scattered across the public web, she becomes entangled with the rapper at the center of the archive. To reclaim their work from a platform economy that monetizes confusion, they must build a trustworthy record without turning each other into content.
+After her partner takes her code and presents it to an Artist as his own MVP, an independent hacker discovers that she and the Artist are unknowingly fighting for the same creative freedom. To reclaim their work from the people and platforms that profit by keeping them apart, they must build a trustworthy collaboration without turning each other into content.
 
 ### The premise
 
-IBLoud IVXX is not a hacker who steals secrets. She is a systems reader: someone who sees relationships among public posts, music cues, broken links, timestamps and algorithmic echoes. She believes a missing post once named the project clearly. Unable to find it, she follows the visible pattern instead.
+IBLoud IVXX is not a hacker who steals secrets. She is a systems reader: someone who sees relationships among public posts, music cues, timestamps, creative workflows and algorithmic echoes. The May 2, 2024 Gerryland posts establish the core collision: her partner takes her code and presents it to the Artist as his MVP; she later takes a chance and shares an analysis for the Artist's investor. She sees both the artist's need for integrity and technology's need for modular tools, describing herself as the bridge.
 
 The rapper is publicly recognizable but intentionally fictionalized in this treatment. His image travels farther and faster than his consent. Every appearance becomes a theory; every theory becomes a commodity. He initially assumes IBLoud is another spectator trying to possess his story.
 
@@ -27,9 +27,9 @@ Can the hacker preserve the signal without claiming the person—and can the rap
 
 ### Part I — Signal
 
-A fleeting public artifact triggers an associative trail across Tumblr, Audio.com and music fragments. IBLoud remembers a pitch about a hacker and a rapper, but the post itself is missing.
+A trusted partner takes the Hacker's code and presents it to the Artist as his own MVP. The theft places her work inside a relationship she did not choose, while the Artist does not yet know whose system he has been shown.
 
-**Turn:** She decides to publish the search method, not a claim that she found the truth.
+**Turn:** Instead of disappearing, she documents the collision and takes a chance on presenting her own analysis.
 
 ### Part II — Noise
 
@@ -75,6 +75,8 @@ A present-day tour renews public attention. The pair use the moment to test a di
 
 ## Provenance
 
-This treatment was created on September 10, 2026 after a search of the supplied Tumblr link did not reveal the remembered pitch. It synthesizes the visible project architecture documented in this repository. It is not a transcription or recovery of a missing post.
+This treatment was created on September 10, 2026 after the first supplied Tumblr URL led to Tumblr's corporate archive. On September 11, 2026, direct searches of the creator-controlled Gerryland and Loptr Lab blogs recovered the May–June 2024 source architecture documented in [SOURCES.md](SOURCES.md).
 
-If the original pitch is found, add its URL, creator, date, export/screenshot and verification note to `SOURCES.md`; preserve this version as a dated interpretation.
+The 2024 posts establish the Hacker and Artist roles, the stolen-MVP collision, the investor-analysis action and the Hacker's role as a bridge between creative and technical systems. This treatment connects those fragments into a unified screen narrative.
+
+The title *The Signal Between Us*, screenplay scenes, dialogue, expanded characterization, network antagonist and ethical resolution remain 2026 interpretive and fictionalized development. Preserve the original posts through creator-controlled exports or screenshots and retain the dated Git history showing how the provenance conclusion changed.
