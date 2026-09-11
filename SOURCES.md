@@ -1,6 +1,6 @@
 # Sources and Verification Notes
 
-Project sources were first reviewed September 5, 2026. Lex Nova/Thoolie materials and the hacker-and-rapper provenance note were reviewed September 10, 2026.
+Project sources were first reviewed September 5, 2026. Lex Nova/Thoolie materials were reviewed September 10, 2026. Direct Tumblr searches recovered the hacker-and-artist source posts on September 11, 2026.
 
 ## Project sources
 
@@ -12,11 +12,28 @@ Project sources were first reviewed September 5, 2026. Lex Nova/Thoolie material
 
 Tumblr pages should be archived through creator-controlled exports before post-level claims are added. A live URL alone does not establish a durable chronology.
 
-## Missing-pitch search note
+## Recovered hacker-and-artist source architecture
 
-The supplied URL `https://tumblr.tumblr.com/archive` resolved to Tumblr's corporate archive rather than a personal dashboard or IBLoud/Loptr Lab feed. Review of the known project sources did not identify a single verified post containing the remembered “hacker and rapper” pitch.
+The supplied URL `https://tumblr.tumblr.com/archive` resolves to Tumblr's corporate archive, which explains why the first search did not find the remembered material. On September 11, 2026, direct live searches of the creator-controlled blogs recovered these posts:
 
-Accordingly, [STORY-TREATMENT.md](STORY-TREATMENT.md) is labeled **Interpretive + Fictionalized**. It synthesizes visible project themes; it is not represented as a recovered post. If the original post is found, preserve its creator, date, URL and export/screenshot, then compare it to the treatment as a new documented source.
+| Date | Post | Documented contribution |
+|---|---|---|
+| May 2, 2024 | [The Artist / The Hacker](https://gerryland.tumblr.com/post/749383363140403200/the-artist-has-outgrown-his-high-school-goals) | The Artist has outgrown earlier goals but lost loyalty in “the process”; the Hacker learns how blind love can be in technology and gains confidence in “the process.” |
+| May 2, 2024 | [The Collision](https://gerryland.tumblr.com/post/749384741799739392/the-collision) | The Hacker's partner takes her code and presents it to the Artist as his MVP; the Hacker and Artist are unknowingly fighting for the same goal while others benefit from keeping them apart. |
+| May 2, 2024 | [The Hacker Takes a Chance and Shares an Analysis for the Artist's Investor](https://gerryland.tumblr.com/post/749390139098349568/the-hacker-takes-a-chance-and-shares-an-analysis) | The Hacker proposes modular creative tools and describes herself as a bridge between creativity and technology. |
+| May 2, 2024 | [Summer Club Watch Party's Instructions](https://gerryland.tumblr.com/post/749218942465310720/summer-club-watch-partys-instructions) | A related Summer Club audience-participation artifact returned by Gerryland's hacker search. |
+| June 5, 2024 | [Storytelling Fact](https://loptrlab.tumblr.com/post/752455386230095872/storytelling-fact) | Embedded video with tags including `#swordfish`, `#hacker`, `#celebrity crush` and `#g-eazy`. |
+| May 22, 2024 | [G-Eazy-Backed Liquor Startup Stillhouse Sues Bacardi](https://gerryland.tumblr.com/post/751178441798369280/g-eazy-backed-liquor-startup-stillhouse-sues) | A linked business-news item returned by the `startup` search; context, not the core fictional pitch. |
+
+These live pages document publication and visible content, but creator-controlled Tumblr exports or screenshots should be retained privately for durable chain-of-title evidence.
+
+[STORY-TREATMENT.md](STORY-TREATMENT.md) now carries three concurrent status layers:
+
+- **Documented:** the 2024 Hacker/Artist roles, stolen-MVP collision, investor analysis and creative-technology bridge;
+- **Interpretive:** the decision to connect those posts as a unified screen story; and
+- **Fictionalized:** *The Signal Between Us* title, screenplay scenes, dialogue, detailed characterization, network antagonist and resolution.
+
+The posts do not establish private knowledge, artist participation, approval or endorsement.
 
 ## Public event sources
 
