@@ -3,7 +3,7 @@
 **Project:** *The Signal Between Us* / IBLoud IVXX Story Lab  
 **Creator and lead systems architect:** Dominique Devereaux  
 **Location:** Minneapolis, Minnesota  
-**Development period documented here:** September 5–10, 2026  
+**Development period documented here:** September 5–11, 2026  
 **Format explored:** Five-part limited series or contained feature film  
 **Current status:** Independent research prototype and fictional development package
 
@@ -53,9 +53,11 @@ I converted a dispersed creative archive into a public development package with 
 
 ## The central design decision
 
-The remembered “hacker and rapper” pitch could not be located as a verified Tumblr post. I chose not to disguise that absence.
+The first search did not locate the remembered “hacker and rapper” pitch because the supplied URL led to Tumblr's corporate archive. I documented that limitation rather than filling it with certainty.
 
-Instead, the repository records the missing pitch as **UNRESOLVED** and labels the resulting treatment **INTERPRETIVE + FICTIONALIZED**. That decision changed the story itself. The hacker does not break into a celebrity's private life or prove a theory about him. She discovers that access to public information is not permission, memory is not evidence, and an archive can reproduce the same loss of agency it claims to oppose.
+A direct live search on September 11, 2026 then recovered the creator-controlled May–June 2024 posts. They document the Hacker and Artist roles, a partner taking her code and presenting it as his MVP, her analysis for the Artist's investor and her identity as a bridge between creativity and technology.
+
+I corrected the repository instead of hiding the earlier conclusion. The source architecture is now **DOCUMENTED**; the decision to connect the fragments is **INTERPRETIVE**; and the title, dialogue, screenplay scenes, detailed characterization and resolution are **FICTIONALIZED**. The hacker still does not break into a celebrity's private life or prove a theory about him. She learns that access to public information is not permission and that an archive can reproduce the same loss of agency it claims to oppose.
 
 The limitation became the dramatic engine:
 
@@ -97,9 +99,9 @@ The package does not end with “here is my idea.” It states what kind of eval
 
 ## Problems solved during production
 
-### A story without a recoverable source post
+### A source recovered after an incomplete first search
 
-Rather than manufacturing provenance, I documented the failed search and preserved the treatment as a dated interpretation. If the source is later found, it can be added without silently rewriting the history.
+I documented the failed first search, then corrected the record when direct Tumblr searches recovered the 2024 posts. Git history preserves both stages. The correction demonstrates why provenance must remain revisable: transparent research is not the absence of mistakes; it is the ability to identify and repair them without erasing how the conclusion changed.
 
 ### A public figure inside an original story
 
@@ -175,7 +177,7 @@ That is the outcome I was trying to prove: nonlinear creative practice can becom
 1. Tailor the package to the exact recipient and decision being requested.
 2. Develop the opening sample into a pilot or feature screenplay.
 3. Replace reference-only tracks with original, documented cues.
-4. Complete creator-controlled Tumblr exports and private chain-of-title records.
+4. Preserve creator-controlled Tumblr exports or screenshots and complete private chain-of-title records.
 5. Obtain qualified entertainment-law review before using a named-person version, raising money or distributing third-party material.
 6. Build a budget, schedule and financing plan only after the creative format and rights path are defined.
 7. Test the public story with privacy-respecting measurements and record what audiences actually do rather than claiming impact.
@@ -195,4 +197,4 @@ For a hiring reviewer with limited time:
 **Dominique Devereaux:** underlying project, archives, characters, themes, creative direction, systems architecture and publication decisions.  
 **OpenAI/ChatGPT:** research organization, drafting assistance, structural analysis, labeling support and implementation assistance under Dominique Devereaux's direction.
 
-This case study describes work completed through September 10, 2026. It is a public portfolio artifact, not proof that any named third party reviewed or approved the project.
+This case study describes work completed through September 11, 2026. It is a public portfolio artifact, not proof that any named third party reviewed or approved the project.
