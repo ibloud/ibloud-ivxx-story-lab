@@ -4,23 +4,23 @@
 **Genre:** Techno-noir music drama / transmedia mystery  
 **Development status:** Independent fictional treatment and research proof of concept  
 **Created by:** Dominique Devereaux / IBLoud IVXX Story Lab  
-**Current version:** September 10, 2026
+**Current version:** September 11, 2026
 
 > **Independent project.** No named artist, label, manager, promoter, venue, platform or attorney is represented as participating in or endorsing this project.
 
 ## Logline
 
-When a Minneapolis archive-builder reconstructs a missing pitch from the public signal surrounding a famous rapper, she discovers that the real antagonist is not the man she thought she understood—it is a network that converts fragments into certainty and attention into ownership. To recover control of their stories, the hacker and the rapper must decide whether collaboration is possible without turning either of them into content.
+After her partner takes her code and presents it to an Artist as his own MVP, a Minneapolis systems-builder discovers that she and the Artist are unknowingly fighting for the same creative freedom. To recover control of their work from the people and platforms that profit by keeping them apart, the hacker and the artist must decide whether collaboration is possible without turning either of them into content.
 
 ## The story
 
 IBLoud IVXX does not break into private systems. She works inside what everyone can already see: deleted posts, headlines, recommendation loops, music fragments and the memories audiences carry between platforms.
 
-A missing Tumblr pitch becomes her point of entry. She believes the scattered evidence contains a story that matters. The fictional rapper experiences her archive as a threat: another stranger arranging his public life into a narrative he did not authorize. Both are right about the danger, and both misunderstand where it originates.
+The documented 2024 Tumblr story becomes her point of entry. Her partner has taken her code to the Artist as his own MVP. She responds by sharing an analysis for the Artist's investor and presenting herself as a bridge between creative and technical systems. The fictionalized Artist still experiences the wider archive as a threat: another person arranging his public life into a narrative he did not authorize. Both recognize part of the danger, but not yet the same antagonist.
 
 Across five movements—**Signal, Noise, Feedback, Terms and Return**—they trace how the network rewards speculation, collapses context and makes recognition feel like relationship. IBLoud must surrender the fantasy that access creates entitlement. The rapper must decide whether protecting his agency requires silence, or whether a carefully bounded collaboration could create something neither of them could make alone.
 
-The missing pitch may never be recovered. The ethical method they build becomes the story.
+The pitch survives in fragments. The ethical method for recovering authorship and negotiating participation becomes the story.
 
 ## Why this project
 
