@@ -19,16 +19,18 @@
     :root {
       color-scheme: dark;
       /* "Everything's Strange Here" — Contaminated Signal Palette */
-      --bg: #06130f;
-      --panel: #0c211b;
-      --line: #1a3329;
-      --ink: #edf2e8;
-      --muted: #91a69e;
-      --acid: #20f26b;
-      --cyan: #10bfee;
-      --daylight: #79a9bd;
-      --yellow: #e5cf82;
-      --notice-bg: #091910;
+      --bg: #050606;
+      --panel: #0b1110;
+      --line: #1c3430;
+      --ink: #f3fff7;
+      --muted: #b0c8c0;
+      --acid: #72ff79;
+      --cyan: #25d7ff;
+      --daylight: #9ed9e8;
+      --yellow: #f3df8a;
+      --notice-bg: #08100e;
+      --acid-rgb: 114, 255, 121;
+      --cyan-rgb: 37, 215, 255;
     }
 
     /* === Texture System === */
@@ -118,10 +120,10 @@
     h1 { margin: .2em 0; font: clamp(2.6rem, 8vw, 6.8rem)/.92 Georgia, serif; letter-spacing: -.055em; max-width: 900px; }
     h2 { font: clamp(1.65rem, 4vw, 2.6rem)/1.1 Georgia, serif; margin: 0 0 .6em; }
     h3 { font: 1.3rem/1.2 Georgia, serif; margin: 2em 0 0.5em; color: var(--ink); display: flex; align-items: center; gap: 12px; }
-    .lede { max-width: 780px; color: #cbd5d6; font-size: 1.06rem; }
+    .lede { max-width: 780px; color: var(--ink); font-size: 1.06rem; }
     .notice { margin: 24px 0 0; padding: 16px 18px; border: 1px solid var(--cyan); background: var(--notice-bg); font-size: .9rem; line-height: 1.5; }
     nav { display: flex; flex-wrap: wrap; gap: 10px 20px; padding: 18px 0; }
-    nav a { color: var(--muted); text-decoration: none; }
+    nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--muted); text-decoration: none; }
     nav a:hover { color: var(--acid); }
     section { padding: 58px 0; border-bottom: 1px solid var(--line); }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
@@ -176,8 +178,13 @@
     .trace-table td:first-child { width: 20%; color: var(--ink); font-weight: 700; }
     .trace-table td:nth-child(2) { width: 18%; }
     .trace-table td:last-child { color: var(--muted); }
-    .trace-code { display: block; margin-top: 8px; padding: 10px 12px; color: var(--yellow); background: #06130f; border: 1px solid var(--line); font-size: .85rem; overflow-wrap: anywhere; }
+    .trace-code { display: block; margin-top: 8px; padding: 10px 12px; color: var(--yellow); background: var(--bg); border: 1px solid var(--line); font-size: .85rem; overflow-wrap: anywhere; }
     @media (max-width: 700px) { .grid, .trace-grid { grid-template-columns: 1fr; } header { padding-top: 28px; } section { padding: 42px 0; } .spread-row { flex-direction: column; } .trace-table { display: block; overflow-x: auto; } .trace-table th, .trace-table td { min-width: 180px; } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+      body::before, .vhs-overlay { display: none; }
+    }
   </style>
 
 <link rel="canonical" href="https://ibloud.github.io/ibloud-ivxx-story-lab/">
