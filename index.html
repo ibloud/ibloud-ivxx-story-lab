@@ -159,7 +159,25 @@
     .spread-card span { display: block; color: var(--cyan); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.15em; }
     .spread-card.bold { border-color: var(--acid); color: var(--ink); }
 
-    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } header { padding-top: 28px; } section { padding: 42px 0; } .spread-row { flex-direction: column; } }
+    .trace-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .trace-card { padding: 20px; border: 1px solid var(--line); background: linear-gradient(160deg, #0c211b 0%, #07160f 100%); }
+    .trace-card h3 { margin: 0 0 12px; }
+    .trace-card p { margin: 8px 0 0; }
+    .trace-card q { color: var(--ink); }
+    .trace-status { display: inline-block; padding: 3px 8px; border: 1px solid currentColor; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+    .trace-status.documented { color: var(--acid); }
+    .trace-status.interpretive { color: var(--yellow); }
+    .trace-status.fictionalized { color: var(--cyan); }
+    .trace-status.unresolved { color: var(--muted); }
+    .trace-note { margin-top: 18px; padding: 16px 18px; border-left: 3px solid var(--yellow); background: var(--notice-bg); }
+    .trace-table { width: 100%; border-collapse: collapse; margin-top: 22px; }
+    .trace-table th, .trace-table td { padding: 14px 12px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .trace-table th { color: var(--cyan); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
+    .trace-table td:first-child { width: 20%; color: var(--ink); font-weight: 700; }
+    .trace-table td:nth-child(2) { width: 18%; }
+    .trace-table td:last-child { color: var(--muted); }
+    .trace-code { display: block; margin-top: 8px; padding: 10px 12px; color: var(--yellow); background: #06130f; border: 1px solid var(--line); font-size: .85rem; overflow-wrap: anywhere; }
+    @media (max-width: 700px) { .grid, .trace-grid { grid-template-columns: 1fr; } header { padding-top: 28px; } section { padding: 42px 0; } .spread-row { flex-direction: column; } .trace-table { display: block; overflow-x: auto; } .trace-table th, .trace-table td { min-width: 180px; } }
   </style>
 
 <link rel="canonical" href="https://ibloud.github.io/ibloud-ivxx-story-lab/">
@@ -189,6 +207,7 @@
       <a href="#pattern">Pattern</a>
       <a href="#story-premise">Story premise</a>
       <a href="#open-inquiry">Open inquiry</a>
+      <a href="#source-trace">Source trace</a>
       <a href="#story">Story structure</a>
       <a href="#sound">Sound</a>
       <a href="#oracle">Deck 1</a>
@@ -237,6 +256,25 @@
       </p>
       <p class="status-note">This inquiry remains open to additional verifiable public evidence and documented corrections. It does not imply that the artist or his representatives encountered or responded to this project.</p>
       <a class="cta" href="SOURCES.md">Review the complete source ledger</a>
+    </section>
+
+    <section id="source-trace">
+      <div class="eyebrow">Evidence boundary / creator attribution</div>
+      <h2>Source trace</h2>
+      <p class="lede">The origin post is unresolved. This view keeps the five cited 2024 posts distinct from the repo&apos;s reading of them and does not treat an unconfirmed post as documented.</p>
+      <div class="trace-grid">
+        <article class="trace-card"><span class="trace-status documented">Documented</span><h3>2024 Gerryland / Loptr Lab posts</h3><p>Short attributed excerpts: <q>The Artist has outgrown his high school goals</q>; the Hacker&apos;s partner presents her code to the Artist as his MVP; the Hacker shares an analysis for the Artist&apos;s investor; she describes herself as a bridge between creativity and technology.</p><p class="status-note">URLs and dates are listed in <a href="SOURCES.md">SOURCES.md</a>. These posts establish fragments, not private events, contact, participation or endorsement.</p></article>
+        <article class="trace-card"><span class="trace-status interpretive">Interpretive</span><h3>Repo&apos;s reading</h3><p>Connecting the public fragments into a hacker/artist story, and framing the sequence as a parasocial collaboration interrupted by COVID-19, is the creator&apos;s reading. No specific post is being offered here as documentation for that framing.</p><p class="status-note">If a 2020 post is found, source this framing before relabeling it.</p></article>
+        <article class="trace-card"><span class="trace-status fictionalized">Fictionalized</span><h3>Later story development</h3><p><em>The Signal Between Us</em>, its title, scenes, dialogue, expanded characterization, network antagonist and ethical resolution are later fictionalized development. They are not presented as recovered biography or a recovered origin post.</p></article>
+        <article class="trace-card"><span class="trace-status unresolved">Unresolved</span><h3>Origin post and COVID-era source</h3><p>The origin post URL and date are not confirmed. The repo also does not identify a 2020 post documenting the COVID-era parasocial-collaboration framing.</p><p class="status-note">No claim is made about private events or any real person&apos;s involvement.</p></article>
+      </div>
+      <h3>Timeline labels</h3>
+      <table class="trace-table"><thead><tr><th>When</th><th>Status</th><th>What the record supports</th></tr></thead><tbody>
+        <tr><td>Feb 2020</td><td><span class="trace-status documented">Documented</span></td><td>Public Super Bowl LIV weekend footage and reporting, cited in SOURCES.md.</td></tr>
+        <tr><td>June 2020</td><td><span class="trace-status unresolved">Unresolved</span></td><td><em>Everything&apos;s Strange Here</em> was recorded during COVID-19; verify the date against an official source before treating this entry as documented.</td></tr>
+        <tr><td>May 2 + June 5, 2024</td><td><span class="trace-status documented">Documented</span></td><td>Creator&apos;s Gerryland and Loptr Lab Tumblr posts set out the hacker/artist story; URLs are listed in SOURCES.md.</td></tr>
+      </tbody></table>
+      <div class="trace-note"><strong>Creator note.</strong> The COVID-era parasocial-collaboration framing is my reading of the sequence above, not a documented claim. If I find a 2020 post, I should add its URL, date and a short attributed excerpt to SOURCES.md and the Drive doc. Neither currently names the origin post. Proposed line for both: <span class="trace-code">Origin post: [title], by [creator], [date], [URL]. Status: unresolved pending creator-supplied URL/date and archived copy.</span></div>
     </section>
 
     <section id="story">

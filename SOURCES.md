@@ -63,6 +63,14 @@ Public listings identify a 23-show tour running September 15 through October 28,
 
 Lex Nova/Thoolie describes these materials as educational and not individualized legal advice. Their inclusion documents the research route; it does not establish clearance, attorney representation or endorsement.
 
+## Origin-post gap
+
+The origin Gerryland post for the proposed story is not yet identified by URL and date. The COVID-era parasocial-collaboration framing remains the creator's interpretation of the dated sequence, not a documented claim. The Drive document and this file do not currently name the origin post. Proposed line for both, pending confirmation:
+
+> Origin post: [title], by [creator], [date], [URL]. Status: unresolved pending creator-supplied URL/date and archived copy.
+
+Do not add a post-level claim until the creator supplies the URL and date. Do not make claims about private events or any real person's involvement.
+
 ## Source policy
 
 Prefer primary posts, official ticket listings, executed agreements, copyright records and platform terms. Preserve date, URL, creator, screenshot/export provenance and truth-status label. Historical/archive materials remain provenance and do not silently become current rules. Corrections should amend the repository rather than overwrite the historical record without explanation.
