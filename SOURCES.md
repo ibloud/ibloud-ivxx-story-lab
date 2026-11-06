@@ -41,7 +41,7 @@ The posts do not establish private knowledge, artist participation, approval or 
 - Page Six, February 3, 2020: <https://pagesix.com/2020/02/03/g-eazy-and-megan-thee-stallion-get-cozy-at-super-bowl-2020-bash/>
 - E! News report and public denial context: <https://www.eonline.com/news/1118794/g-eazy-and-megan-thee-stallion-spark-romance-rumors-after-nsfw-pda>
 
-These sources document public appearances, footage and resulting speculation. They do not establish a romantic relationship or private intent.
+These sources document public appearances, footage and resulting speculation. They do not establish a romantic relationship or private intent. The Ex, the bounty and all relationship material in the story treatment are fictionalized and must not be read back onto these sources.
 
 ## Current tour sources
 

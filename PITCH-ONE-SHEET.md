@@ -10,7 +10,9 @@
 
 ## Logline
 
-After her partner takes her code and presents it to an Artist as his own MVP, a Minneapolis systems-builder discovers that she and the Artist are unknowingly fighting for the same creative freedom. To recover control of their work from the people and platforms that profit by keeping them apart, the hacker and the artist must decide whether collaboration is possible without turning either of them into content.
+**Fictionalized premise:** An artist fights for the right not to be digitized. A hacker accepts a non-violent digital bounty from the fully fictional composite called “The Ex”: a paid task to expose or clone his online identity and fund her startup. The Ex, the network antagonist, and every account, break-up, and relationship in this premise are invented and do not describe any real person or event. The hacker later learns that access is not permission and reverses the task in “Terms” and “Return.”
+
+After her fictional partner takes her code and presents it to a fictional Artist as his own MVP, a Minneapolis systems-builder discovers that she and the Artist are unknowingly fighting for the same creative freedom. To recover control of their work from the people and platforms that profit by keeping them apart, the hacker and the artist must decide whether collaboration is possible without turning either of them into content.
 
 ## The story
 
