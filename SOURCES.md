@@ -4,13 +4,14 @@ Project sources were first reviewed September 5, 2026. Lex Nova/Thoolie material
 
 ## Project sources
 
+- Surviving public Instagram account: <https://instagram.com/i.b.loud>
 - IBLoud IVXX Audio.com profile: <https://audio.com/ibloud-ivxx>
 - Loptr Lab Tumblr: <https://www.tumblr.com/loptrlab>
 - Gerryland Tumblr: <https://www.tumblr.com/gerryland>
 - ibloud.xyz Tumblr: <https://www.tumblr.com/ibloud-xyz>
 - Battle the Beast repository: <https://github.com/ibloud/battle-the-beast>
 
-Tumblr pages should be archived through creator-controlled exports before post-level claims are added. A live URL alone does not establish a durable chronology.
+Post-level claims in this public ledger are limited to what is visible at the cited public URL and the date visible on that page.
 
 ## Recovered hacker-and-artist source architecture
 
@@ -25,7 +26,7 @@ The supplied URL `https://tumblr.tumblr.com/archive` resolves to Tumblr's corpor
 | June 5, 2024 | [Storytelling Fact](https://loptrlab.tumblr.com/post/752455386230095872/storytelling-fact) | Embedded video with tags including `#swordfish`, `#hacker`, `#celebrity crush` and `#g-eazy`. |
 | May 22, 2024 | [G-Eazy-Backed Liquor Startup Stillhouse Sues Bacardi](https://gerryland.tumblr.com/post/751178441798369280/g-eazy-backed-liquor-startup-stillhouse-sues) | A linked business-news item returned by the `startup` search; context, not the core fictional pitch. |
 
-These live pages document publication and visible content, but creator-controlled Tumblr exports or screenshots should be retained privately for durable chain-of-title evidence.
+These public pages document publication and visible content only; they do not establish private knowledge, contact, participation or endorsement.
 
 [STORY-TREATMENT.md](STORY-TREATMENT.md) now carries three concurrent status layers:
 
@@ -67,10 +68,10 @@ Lex Nova/Thoolie describes these materials as educational and not individualized
 
 The origin Gerryland post for the proposed story is not yet identified by URL and date. The COVID-era parasocial-collaboration framing remains the creator's interpretation of the dated sequence, not a documented claim. The Drive document and this file do not currently name the origin post. Proposed line for both, pending confirmation:
 
-> Origin post: [title], by [creator], [date], [URL]. Status: unresolved pending creator-supplied URL/date and archived copy.
+> Origin post: [title], by [creator], [date visible on page], [public URL]. Status: unresolved pending creator-supplied URL/date.
 
 Do not add a post-level claim until the creator supplies the URL and date. Do not make claims about private events or any real person's involvement.
 
 ## Source policy
 
-Prefer primary posts, official ticket listings, executed agreements, copyright records and platform terms. Preserve date, URL, creator, screenshot/export provenance and truth-status label. Historical/archive materials remain provenance and do not silently become current rules. Corrections should amend the repository rather than overwrite the historical record without explanation.
+Prefer primary public posts, official ticket listings, copyright records and platform terms. Preserve the public URL, date visible on the page, what it states and its truth-status label. Corrections should amend the repository rather than overwrite the historical record without explanation.
