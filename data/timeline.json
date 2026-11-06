@@ -7,8 +7,20 @@
   },
   {
     "period": "2020-02",
-    "event": "Public footage and reporting from Super Bowl LIV weekend generate speculation involving G-Eazy and Megan Thee Stallion; Megan publicly rejects the relationship narrative.",
-    "status": "documented-and-attributed",
+    "event": "Public Super Bowl LIV weekend footage and reporting are documented in SOURCES.md; this does not establish private events or involvement.",
+    "status": "documented",
+    "source": "SOURCES.md"
+  },
+  {
+    "period": "2020-06",
+    "event": "Everything's Strange Here is associated with COVID-era recording; verify the date against an official source before treating this as documented.",
+    "status": "unresolved",
+    "source": "official source needed"
+  },
+  {
+    "period": "2024-05-02/2024-06-05",
+    "event": "Creator Gerryland and Loptr Lab Tumblr posts set out the hacker/artist story.",
+    "status": "documented",
     "source": "SOURCES.md"
   },
   {

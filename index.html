@@ -19,16 +19,18 @@
     :root {
       color-scheme: dark;
       /* "Everything's Strange Here" — Contaminated Signal Palette */
-      --bg: #06130f;
-      --panel: #0c211b;
-      --line: #1a3329;
-      --ink: #edf2e8;
-      --muted: #91a69e;
-      --acid: #20f26b;
-      --cyan: #10bfee;
-      --daylight: #79a9bd;
-      --yellow: #e5cf82;
-      --notice-bg: #091910;
+      --bg: #050606;
+      --panel: #0b1110;
+      --line: #1c3430;
+      --ink: #f3fff7;
+      --muted: #b0c8c0;
+      --acid: #72ff79;
+      --cyan: #25d7ff;
+      --daylight: #9ed9e8;
+      --yellow: #f3df8a;
+      --notice-bg: #08100e;
+      --acid-rgb: 114, 255, 121;
+      --cyan-rgb: 37, 215, 255;
     }
 
     /* === Texture System === */
@@ -118,10 +120,10 @@
     h1 { margin: .2em 0; font: clamp(2.6rem, 8vw, 6.8rem)/.92 Georgia, serif; letter-spacing: -.055em; max-width: 900px; }
     h2 { font: clamp(1.65rem, 4vw, 2.6rem)/1.1 Georgia, serif; margin: 0 0 .6em; }
     h3 { font: 1.3rem/1.2 Georgia, serif; margin: 2em 0 0.5em; color: var(--ink); display: flex; align-items: center; gap: 12px; }
-    .lede { max-width: 780px; color: #cbd5d6; font-size: 1.06rem; }
+    .lede { max-width: 780px; color: var(--ink); font-size: 1.06rem; }
     .notice { margin: 24px 0 0; padding: 16px 18px; border: 1px solid var(--cyan); background: var(--notice-bg); font-size: .9rem; line-height: 1.5; }
     nav { display: flex; flex-wrap: wrap; gap: 10px 20px; padding: 18px 0; }
-    nav a { color: var(--muted); text-decoration: none; }
+    nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--muted); text-decoration: none; }
     nav a:hover { color: var(--acid); }
     section { padding: 58px 0; border-bottom: 1px solid var(--line); }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
@@ -159,7 +161,30 @@
     .spread-card span { display: block; color: var(--cyan); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.15em; }
     .spread-card.bold { border-color: var(--acid); color: var(--ink); }
 
-    @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } header { padding-top: 28px; } section { padding: 42px 0; } .spread-row { flex-direction: column; } }
+    .trace-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .trace-card { padding: 20px; border: 1px solid var(--line); background: linear-gradient(160deg, #0c211b 0%, #07160f 100%); }
+    .trace-card h3 { margin: 0 0 12px; }
+    .trace-card p { margin: 8px 0 0; }
+    .trace-card q { color: var(--ink); }
+    .trace-status { display: inline-block; padding: 3px 8px; border: 1px solid currentColor; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+    .trace-status.documented { color: var(--acid); }
+    .trace-status.interpretive { color: var(--yellow); }
+    .trace-status.fictionalized { color: var(--cyan); }
+    .trace-status.unresolved { color: var(--muted); }
+    .trace-note { margin-top: 18px; padding: 16px 18px; border-left: 3px solid var(--yellow); background: var(--notice-bg); }
+    .trace-table { width: 100%; border-collapse: collapse; margin-top: 22px; }
+    .trace-table th, .trace-table td { padding: 14px 12px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .trace-table th { color: var(--cyan); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
+    .trace-table td:first-child { width: 20%; color: var(--ink); font-weight: 700; }
+    .trace-table td:nth-child(2) { width: 18%; }
+    .trace-table td:last-child { color: var(--muted); }
+    .trace-code { display: block; margin-top: 8px; padding: 10px 12px; color: var(--yellow); background: var(--bg); border: 1px solid var(--line); font-size: .85rem; overflow-wrap: anywhere; }
+    @media (max-width: 700px) { .grid, .trace-grid { grid-template-columns: 1fr; } header { padding-top: 28px; } section { padding: 42px 0; } .spread-row { flex-direction: column; } .trace-table { display: block; overflow-x: auto; } .trace-table th, .trace-table td { min-width: 180px; } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+      body::before, .vhs-overlay { display: none; }
+    }
   </style>
 
 <link rel="canonical" href="https://ibloud.github.io/ibloud-ivxx-story-lab/">
@@ -189,6 +214,7 @@
       <a href="#pattern">Pattern</a>
       <a href="#story-premise">Story premise</a>
       <a href="#open-inquiry">Open inquiry</a>
+      <a href="#source-trace">Source trace</a>
       <a href="#story">Story structure</a>
       <a href="#sound">Sound</a>
       <a href="#oracle">Deck 1</a>
@@ -219,7 +245,7 @@
         <p>A hacker does not break into a rapper's private life. She enters the public machine built around him: feeds, deleted posts, headlines, recommendation systems, music fragments and fan certainty. What begins as an attempt to reconstruct one missing pitch becomes a confrontation with a system that turns attention into ownership.</p>
         <p>The rapper first experiences the hacker as a threat. She appears to know too much because the network has made scattered public facts feel intimate. The hacker confronts the opposite problem: access is not permission, correlation is not truth, and an archive can harm the people it claims to preserve.</p>
         <p class="story-question">Can two creators recover agency from a system that profits when audiences confuse public signals with private truth?</p>
-        <p class="status-note"><strong>Interpretive + Fictionalized.</strong> This premise is not a factual claim about any named artist, hacker, relationship or private event. It is not represented as recovery of the missing Tumblr pitch.</p>
+        <p class="status-note"><strong>Interpretive + Fictionalized.</strong> The Ex, the non-violent digital bounty, the invented network accounts, and every break-up or relationship in this premise are fictionalized composites. They are not claims about any named artist, hacker, ex-partner, private event or real person, and are not represented as recovery of the missing Tumblr pitch.</p>
         <a class="cta" href="STORY-TREATMENT.md">Read the full treatment and provenance</a>
       </div>
     </section>
@@ -237,6 +263,26 @@
       </p>
       <p class="status-note">This inquiry remains open to additional verifiable public evidence and documented corrections. It does not imply that the artist or his representatives encountered or responded to this project.</p>
       <a class="cta" href="SOURCES.md">Review the complete source ledger</a>
+    </section>
+
+    <section id="source-trace">
+      <div class="eyebrow">Evidence boundary / creator attribution</div>
+      <h2>Source trace</h2>
+      <p class="lede">The origin post is unresolved. This view keeps the five cited 2024 posts distinct from the repo&apos;s reading of them and does not treat an unconfirmed post as documented.</p>
+      <div class="trace-grid">
+        <article class="trace-card"><span class="trace-status documented">Documented</span><h3>2024 Gerryland / Loptr Lab posts</h3><p>Short attributed excerpts: <q>The Artist has outgrown his high school goals</q>; the Hacker&apos;s partner presents her code to the Artist as his MVP; the Hacker shares an analysis for the Artist&apos;s investor; she describes herself as a bridge between creativity and technology.</p><p class="status-note">URLs and dates are listed in <a href="SOURCES.md">SOURCES.md</a>. These posts establish fragments, not private events, contact, participation or endorsement.</p></article>
+        <article class="trace-card"><span class="trace-status interpretive">Interpretive</span><h3>Repo&apos;s reading</h3><p>Connecting the public fragments into a hacker/artist story, and framing the sequence as a parasocial collaboration interrupted by COVID-19, is the creator&apos;s reading. No specific post is being offered here as documentation for that framing.</p><p class="status-note">If a 2020 post is found, source this framing before relabeling it.</p></article>
+        <article class="trace-card"><span class="trace-status fictionalized">Fictionalized</span><h3>Later story development</h3><p><em>The Signal Between Us</em>, its title, scenes, dialogue, expanded characterization, network antagonist and ethical resolution are later fictionalized development. They are not presented as recovered biography or a recovered origin post.</p></article>
+        <article class="trace-card"><span class="trace-status unresolved">Unresolved</span><h3>Origin post and COVID-era source</h3><p>The origin post URL and date are not confirmed. The repo also does not identify a 2020 post documenting the COVID-era parasocial-collaboration framing.</p><p class="status-note">No claim is made about private events or any real person&apos;s involvement.</p></article>
+      </div>
+      <h3>Public evidence intake</h3>
+      <table class="trace-table"><thead><tr><th>Public URL</th><th>Date visible</th><th>What it states</th><th>Status</th></tr></thead><tbody>
+        <tr><td><a href="https://instagram.com/i.b.loud">instagram.com/i.b.loud</a></td><td>Visible on page</td><td>Surviving public Instagram account; no additional claim is made here without a visible dated post.</td><td><span class="trace-status unresolved">Unresolved</span></td></tr>
+        <tr><td><a href="https://pagesix.com/2020/02/03/g-eazy-and-megan-thee-stallion-get-cozy-at-super-bowl-2020-bash/">Page Six</a>; <a href="https://www.eonline.com/news/1118794/g-eazy-and-megan-thee-stallion-spark-romance-rumors-after-nsfw-pda">E! News</a></td><td>Feb 3, 2020</td><td>Public Super Bowl LIV weekend footage and reporting.</td><td><span class="trace-status documented">Documented</span></td></tr>
+        <tr><td>Official source needed</td><td>June 2020</td><td><em>Everything&apos;s Strange Here</em> was recorded during COVID-19; the date still needs verification against a public official source.</td><td><span class="trace-status unresolved">Unresolved</span></td></tr>
+        <tr><td><a href="SOURCES.md#recovered-hacker-and-artist-source-architecture">Gerryland / Loptr Lab Tumblr posts</a></td><td>May 2 + June 5, 2024</td><td>Public posts state the cited hacker/artist story fragments; only short attributed excerpts are used.</td><td><span class="trace-status documented">Documented</span></td></tr>
+      </tbody></table>
+      <div class="trace-note"><strong>Creator note.</strong> The COVID-era parasocial-collaboration framing is my reading of the public sequence above, attributed to me as creator, not a documented claim. If I find a public 2020 post, I should add its URL, visible date and a short attributed excerpt to SOURCES.md and the Drive doc. Neither currently names the origin post. Proposed line for both: <span class="trace-code">Origin post: [title], by [creator], [date visible on page], [public URL]. Status: unresolved pending creator-supplied URL/date.</span></div>
     </section>
 
     <section id="story">
